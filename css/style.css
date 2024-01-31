@@ -1,0 +1,191 @@
+:root {
+  --primary-color: #fffb00;
+  --icon-color: #121216;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  grid-template-areas: 'content';
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+main {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  grid-area: content;
+  z-index: 777;
+  max-width: 1200px;
+  width: 100%;
+  place-self: start center;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  height: 100vh;
+}
+
+.voltar {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: grid;
+  place-content: center;
+  font-size: 2.5rem;
+  transition: all 0.5s;
+}
+.voltar:hover {
+  color: var(--primary-color);
+  z-index: 9999;
+}
+
+
+
+
+
+.new_footer_top {
+padding: 0px 0px 180px;
+position: relative;
+overflow-x: hidden;
+width: 100% !important;
+margin-bottom: 227px;
+
+}
+.new_footer_area .footer_bottom {
+padding-top: 50px;
+padding-bottom: 0px;
+
+
+}
+.footer_bottom {
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+color: #7f88a600;
+padding: 0px 50px;
+  text-align: center;
+  
+}
+
+
+
+.new_footer_top .footer_bg {
+position: absolute;
+bottom: 0;
+background: url("https://res.cloudinary.com/iamcybersam/image/upload/v1627349462/footer_bg1_pgl4jw.png") no-repeat scroll center 0;
+width: 100%;
+height: 266px;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+background: url("https://res.cloudinary.com/iamcybersam/image/upload/v1627348369/car_jucbmp.gif") no-repeat center center;
+width: 180px;
+height: 50px;
+background-size:100%;
+position: absolute;
+bottom: 0;
+left: 35%;
+-webkit-animation: myfirst 22s linear infinite;
+animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+background: url("https://res.cloudinary.com/iamcybersam/image/upload/v1627348370/bicycle_klbr4n.gif") no-repeat center center;
+width: 56px;
+height: 60px;
+background-size:100%;
+bottom: 0;
+left: 40%;
+position: absolute;
+-webkit-animation: myfirst 30s linear infinite;
+animation: myfirst 30s linear infinite;
+}
+
+@-moz-keyframes myfirst {
+0% {
+left: -25%;
+}
+100% {
+left: 100%;
+}
+}
+
+@-webkit-keyframes myfirst {
+0% {
+left: -25%;
+}
+100% {
+left: 100%;
+}
+}
+
+@keyframes myfirst {
+0% {
+left: -25%;
+}
+100% {
+left: 100%;
+}
+}
+
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #0005;
+  grid-area: content;
+  place-self: end center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid white;
+  font-size: 1rem;
+  gap: 3px;
+}
+
+.copy-name {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+@media (max-width: 3000px) {
+  .navigation-icon {
+    visibility: hidden;
+  }
+}
+
+/* Barra de Rolagem */
+
+/* Fundo que corre */
+::-webkit-scrollbar-track {
+  background-color: #232c3b;
+}
+/* Fundo que corre */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #f4f4f4;
+}
+
+/* Linha que desce */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 15px;
+}
+/* Linha que desce*/
+
+/* Barra de Rolagem */
